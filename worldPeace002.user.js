@@ -1,10 +1,10 @@
 // ==Userscript==
-// @name    KMC_JS_001_Background_Changer
+// @name    KMC_JS_002_Background_Changer
 // @include *
 // ==/UserScript==
 
 
-function changeBackground(url){
+function changeBackgroundUrl(url){
     document.body.style.background = 'url("' + url + '")';
 }
 
