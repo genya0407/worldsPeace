@@ -10,10 +10,9 @@ var Animal = function(){
 	this.makeNoise = function(){ console.log(this.noise)};
 }
 
-var anim = new Animal();
-anim.makeNoise();
-var Ham = new Animal();
-Ham.noise = "foo";
+var Ham = function(){};
+Ham.prototype = new Animal();
+Ham.prototype.noise = "foo";
 var ham = new Ham();
 ham.makeNoise();
 
